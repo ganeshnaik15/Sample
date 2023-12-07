@@ -1,0 +1,26 @@
+server:
+  port: 9093
+product:
+  profile:
+    host:
+      uri: http://localhost:8081
+
+# Database Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/product
+    username: root
+    password: Vaishu@2806
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  # Hibernate Configuration
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true
+
+
+  resources:
+    static-locations: classpath:/static/
